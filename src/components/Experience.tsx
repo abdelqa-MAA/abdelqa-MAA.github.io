@@ -2,42 +2,56 @@ interface Role {
   period: string;
   title: string;
   company: string;
+  location: string;
   description: string;
 }
 
 const roles: Role[] = [
   {
-    period: "2022 — Present",
-    title: "Senior Software Engineer",
-    company: "Company Name",
+    period: "Apr 2026 — Present",
+    title: "Sales Associate",
+    company: "Home Depot",
+    location: "Tigard, Oregon",
     description:
-      "Leading frontend architecture and mentoring a team of engineers. Driving adoption of modern tooling and establishing design system foundations across multiple product lines.",
+      "Helping customers choose and cut lumber for projects. Collaborating with colleagues to achieve daily sales goals through effective communication and product knowledge.",
   },
   {
-    period: "2020 — 2022",
-    title: "Software Engineer",
-    company: "Previous Company",
+    period: "Sep 2025 — Present",
+    title: "Member",
+    company: "Viking Motor Sports",
+    location: "Portland, Oregon",
     description:
-      "Built and maintained core product features serving thousands of daily users. Improved application performance by optimizing rendering pipelines and reducing bundle size.",
-  },
-  {
-    period: "2018 — 2020",
-    title: "Junior Developer",
-    company: "First Company",
-    description:
-      "Developed internal tools and contributed to customer-facing applications. Gained deep experience with full-stack development and agile methodologies.",
+      "Designing a speedometer for the Baja off-road vehicle to improve driver safety and efficiency. Contributing to team meetings and assisting with special events and programs.",
   },
 ];
 
+const education = {
+  school: "Portland State University",
+  degree: "Bachelor of Science, Electrical Engineering",
+  expected: "Expected June 2028",
+  gpa: "3.08",
+  courses: [
+    "Digital Circuits",
+    "Digital Systems",
+    "Electric Circuit Analysis I & II",
+    "Engineering Programming",
+    "Engineering Computation",
+    "Physics I & II",
+    "Introduction to Design Processes",
+  ],
+};
+
 const skills = [
-  "JavaScript / TypeScript",
-  "React / Next.js",
-  "Node.js",
   "Python",
-  "PostgreSQL",
-  "Git / CI/CD",
-  "Docker",
-  "REST / GraphQL",
+  "C",
+  "STM32",
+  "Arduino",
+  "PCB Design",
+  "KiCad",
+  "Multisim",
+  "Microsoft Excel",
+  "Digital Logic",
+  "Embedded Systems",
 ];
 
 const Experience = () => {
@@ -50,15 +64,40 @@ const Experience = () => {
           </h2>
         </div>
         <div className="md:col-span-8 p-8 py-16 md:py-24 flex flex-col gap-16">
+          {/* Education */}
+          <div className="pb-8 border-b border-frame">
+            <div className="text-xs uppercase tracking-widest text-clay mb-6">
+              Education
+            </div>
+            <h3 className="text-xl md:text-2xl font-medium tracking-tight font-heading">
+              {education.degree}
+            </h3>
+            <p className="mt-2 text-sm text-clay">
+              {education.school} · {education.expected} · GPA {education.gpa}
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {education.courses.map((course) => (
+                <span
+                  key={course}
+                  className="text-xs px-2 py-1 border border-frame bg-background"
+                >
+                  {course}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Experience */}
           {roles.map((role, i) => (
             <div key={i} className="flex flex-col sm:flex-row gap-6 md:gap-8 items-start">
-              <div className="w-32 shrink-0 text-sm tabular-nums text-clay mt-1">
+              <div className="w-36 shrink-0 text-sm tabular-nums text-clay mt-1">
                 {role.period}
               </div>
               <div>
                 <h3 className="text-xl md:text-2xl font-medium tracking-tight font-heading">
                   {role.title}, {role.company}
                 </h3>
+                <p className="text-sm text-clay mt-1">{role.location}</p>
                 <p className="mt-4 text-sm leading-relaxed max-w-[50ch] text-pretty">
                   {role.description}
                 </p>
