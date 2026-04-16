@@ -39,7 +39,7 @@ const projects: Project[] = [
       "Built a mini piano keyboard using a microcontroller, buttons, speaker, and touch slider for tone control. Applied Scrum methodology and iterative PCB development.",
     status: "Completed",
     exhibit: "03",
-    images: [miniPiano],
+    images: [miniPiano, pianoSchematic],
   },
   {
     title: "Hamming Code Circuit",
