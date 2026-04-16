@@ -1,5 +1,7 @@
 import effectsPedal from "@/assets/effects-pedal.png";
+import effectsPedalPcb from "@/assets/effects-pedal-pcb.png";
 import miniPiano from "@/assets/mini-piano.png";
+import pianoSchematic from "@/assets/piano-schematic.png";
 import hammingSchematic from "@/assets/hamming-schematic.png";
 import hammingBreadboard from "@/assets/hamming-breadboard.png";
 
@@ -28,7 +30,7 @@ const projects: Project[] = [
       "Designed and built an analog audio effects pedal for electric instruments with amplification and filtering stages, applying low-noise PCB techniques for signal integrity.",
     status: "Completed",
     exhibit: "02",
-    images: [effectsPedal],
+    images: [effectsPedal, effectsPedalPcb],
   },
   {
     title: "Mini-Piano Keyboard",
@@ -37,7 +39,7 @@ const projects: Project[] = [
       "Built a mini piano keyboard using a microcontroller, buttons, speaker, and touch slider for tone control. Applied Scrum methodology and iterative PCB development.",
     status: "Completed",
     exhibit: "03",
-    images: [miniPiano],
+    images: [miniPiano, pianoSchematic],
   },
   {
     title: "Hamming Code Circuit",
