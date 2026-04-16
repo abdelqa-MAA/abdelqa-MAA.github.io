@@ -28,6 +28,15 @@ const Footer = () => {
         >
           LinkedIn ↗
         </a>
+        <span className="mx-2 text-clay">·</span>
+        <a
+          href="https://github.com/abdelqa-MAA"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-foreground hover:italic transition-all inline-block"
+        >
+          GitHub ↗
+        </a>
       </div>
       <div className="text-right">
         <a
