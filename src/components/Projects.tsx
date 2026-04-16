@@ -1,9 +1,15 @@
+import effectsPedal from "@/assets/effects-pedal.png";
+import miniPiano from "@/assets/mini-piano.png";
+import hammingSchematic from "@/assets/hamming-schematic.png";
+import hammingBreadboard from "@/assets/hamming-breadboard.png";
+
 interface Project {
   title: string;
   tech: string;
   description: string;
   status: string;
   exhibit: string;
+  images?: string[];
 }
 
 const projects: Project[] = [
@@ -22,6 +28,7 @@ const projects: Project[] = [
       "Designed and built an analog audio effects pedal for electric instruments with amplification and filtering stages, applying low-noise PCB techniques for signal integrity.",
     status: "Completed",
     exhibit: "02",
+    images: [effectsPedal],
   },
   {
     title: "Mini-Piano Keyboard",
@@ -30,6 +37,7 @@ const projects: Project[] = [
       "Built a mini piano keyboard using a microcontroller, buttons, speaker, and touch slider for tone control. Applied Scrum methodology and iterative PCB development.",
     status: "Completed",
     exhibit: "03",
+    images: [miniPiano],
   },
   {
     title: "Hamming Code Circuit",
@@ -38,6 +46,7 @@ const projects: Project[] = [
       "Designed a (7,4) Hamming code circuit using logic gate ICs, LEDs, and toggle switches implementing encoding and parity-check logic to detect and correct single-bit errors.",
     status: "Completed",
     exhibit: "04",
+    images: [hammingSchematic, hammingBreadboard],
   },
 ];
 
@@ -72,6 +81,20 @@ const Projects = () => {
                   {project.description}
                 </div>
               </div>
+              {project.images && project.images.length > 0 && (
+                <div className={`mt-8 grid gap-4 ${project.images.length > 1 ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1 max-w-md"}`}>
+                  {project.images.map((img, i) => (
+                    <div key={i} className="border border-frame overflow-hidden">
+                      <img
+                        src={img}
+                        alt={`${project.title} - image ${i + 1}`}
+                        className="w-full h-auto object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
             </article>
           ))}
         </div>
