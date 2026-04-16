@@ -30,7 +30,7 @@ const projects: Project[] = [
       "Designed and built an analog audio effects pedal for electric instruments with amplification and filtering stages, applying low-noise PCB techniques for signal integrity.",
     status: "Completed",
     exhibit: "02",
-    images: [effectsPedal],
+    images: [effectsPedal, effectsPedalPcb],
   },
   {
     title: "Mini-Piano Keyboard",
