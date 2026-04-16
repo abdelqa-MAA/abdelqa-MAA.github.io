@@ -8,18 +8,18 @@ const Hero = () => {
         Electrical Engineering student at Portland State University passionate about embedded systems, 
         PCB design, and digital logic. Building real-world hardware solutions from concept to completion.
       </p>
-      <div className="mt-8 flex gap-6 text-sm text-clay uppercase tracking-widest">
+      <div className="mt-8 flex gap-6 text-sm uppercase tracking-widest">
         <a
-          href="https://github.com/yourusername"
+          href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-foreground transition-colors"
+          className="text-foreground border border-frame px-4 py-2 hover:bg-foreground hover:text-background transition-colors"
         >
-          GitHub ↗
+          Resume ↗
         </a>
         <a
           href="mailto:abdullahga2006@gmail.com"
-          className="hover:text-foreground transition-colors"
+          className="text-clay hover:text-foreground transition-colors py-2"
         >
           Email ↗
         </a>

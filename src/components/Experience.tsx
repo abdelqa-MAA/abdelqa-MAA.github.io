@@ -1,3 +1,5 @@
+import AnimateIn from "./AnimateIn";
+
 interface Role {
   period: string;
   title: string;
@@ -31,13 +33,16 @@ const education = {
   expected: "Expected June 2028",
   gpa: "3.08",
   courses: [
+    "Exploring Electrical Engineering",
+    "Engineering Computation",
+    "Engineering Programming",
     "Digital Circuits",
     "Digital Systems",
-    "Electric Circuit Analysis I & II",
-    "Engineering Programming",
-    "Engineering Computation",
-    "Physics I & II",
     "Introduction to Design Processes",
+    "Electric Circuit Analysis I",
+    "Electric Circuit Analysis II",
+    "Physics I",
+    "Physics II",
   ],
 };
 
@@ -65,62 +70,68 @@ const Experience = () => {
         </div>
         <div className="md:col-span-8 p-8 py-16 md:py-24 flex flex-col gap-16">
           {/* Education */}
-          <div className="pb-8 border-b border-frame">
-            <div className="text-xs uppercase tracking-widest text-clay mb-6">
-              Education
+          <AnimateIn>
+            <div className="pb-8 border-b border-frame">
+              <div className="text-xs uppercase tracking-widest text-clay mb-6">
+                Education
+              </div>
+              <h3 className="text-xl md:text-2xl font-medium tracking-tight font-heading">
+                {education.degree}
+              </h3>
+              <p className="mt-2 text-sm text-clay">
+                {education.school} · {education.expected} · GPA {education.gpa}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {education.courses.map((course) => (
+                  <span
+                    key={course}
+                    className="text-xs px-2 py-1 border border-frame bg-background"
+                  >
+                    {course}
+                  </span>
+                ))}
+              </div>
             </div>
-            <h3 className="text-xl md:text-2xl font-medium tracking-tight font-heading">
-              {education.degree}
-            </h3>
-            <p className="mt-2 text-sm text-clay">
-              {education.school} · {education.expected} · GPA {education.gpa}
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {education.courses.map((course) => (
-                <span
-                  key={course}
-                  className="text-xs px-2 py-1 border border-frame bg-background"
-                >
-                  {course}
-                </span>
-              ))}
-            </div>
-          </div>
+          </AnimateIn>
 
           {/* Experience */}
           {roles.map((role, i) => (
-            <div key={i} className="flex flex-col sm:flex-row gap-6 md:gap-8 items-start">
-              <div className="w-36 shrink-0 text-sm tabular-nums text-clay mt-1">
-                {role.period}
+            <AnimateIn key={i} delay={i * 0.1}>
+              <div className="flex flex-col sm:flex-row gap-6 md:gap-8 items-start">
+                <div className="w-36 shrink-0 text-sm tabular-nums text-clay mt-1">
+                  {role.period}
+                </div>
+                <div>
+                  <h3 className="text-xl md:text-2xl font-medium tracking-tight font-heading">
+                    {role.title}, {role.company}
+                  </h3>
+                  <p className="text-sm text-clay mt-1">{role.location}</p>
+                  <p className="mt-4 text-sm leading-relaxed max-w-[50ch] text-pretty">
+                    {role.description}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl md:text-2xl font-medium tracking-tight font-heading">
-                  {role.title}, {role.company}
-                </h3>
-                <p className="text-sm text-clay mt-1">{role.location}</p>
-                <p className="mt-4 text-sm leading-relaxed max-w-[50ch] text-pretty">
-                  {role.description}
-                </p>
-              </div>
-            </div>
+            </AnimateIn>
           ))}
 
           {/* Skills */}
-          <div className="pt-8 border-t border-frame">
-            <div className="text-xs uppercase tracking-widest text-clay mb-6">
-              Technical Proficiencies
+          <AnimateIn>
+            <div className="pt-8 border-t border-frame">
+              <div className="text-xs uppercase tracking-widest text-clay mb-6">
+                Technical Proficiencies
+              </div>
+              <div className="flex flex-wrap gap-3">
+                {skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="text-sm px-3 py-1.5 border border-frame bg-background"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <span
-                  key={skill}
-                  className="text-sm px-3 py-1.5 border border-frame bg-background"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
+          </AnimateIn>
         </div>
       </div>
     </section>
