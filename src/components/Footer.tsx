@@ -12,6 +12,22 @@ const Footer = () => {
         >
           abdullahga2006@gmail.com
         </a>
+        <br />
+        <a
+          href="tel:+16026007233"
+          className="text-foreground hover:italic transition-all inline-block"
+        >
+          (602) 600-7233
+        </a>
+        <br />
+        <a
+          href="https://www.linkedin.com/in/muhammad-abdullah-abdelqader-4b95bb321"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-foreground hover:italic transition-all inline-block"
+        >
+          LinkedIn ↗
+        </a>
       </div>
       <div className="text-right">
         <a
