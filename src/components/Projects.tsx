@@ -1,5 +1,7 @@
 import effectsPedal from "@/assets/effects-pedal.png";
+import effectsPedalPcb from "@/assets/effects-pedal-pcb.png";
 import miniPiano from "@/assets/mini-piano.png";
+import pianoSchematic from "@/assets/piano-schematic.png";
 import hammingSchematic from "@/assets/hamming-schematic.png";
 import hammingBreadboard from "@/assets/hamming-breadboard.png";
 
