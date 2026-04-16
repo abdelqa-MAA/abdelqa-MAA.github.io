@@ -1,3 +1,4 @@
+import AnimateIn from "./AnimateIn";
 import effectsPedal from "@/assets/effects-pedal.png";
 import effectsPedalPcb from "@/assets/effects-pedal-pcb.png";
 import miniPiano from "@/assets/mini-piano.png";
@@ -62,42 +63,44 @@ const Projects = () => {
           </h2>
         </div>
         <div className="md:col-span-8 p-8 flex flex-col gap-20 py-16 md:py-24">
-          {projects.map((project) => (
-            <article key={project.exhibit} className="group">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="text-xs font-medium uppercase tracking-widest text-clay">
-                  Exhibit {project.exhibit}
-                </span>
-                <span className={`text-xs px-2 py-0.5 border ${project.status === "In Progress" ? "border-foreground/30 text-foreground" : "border-frame text-clay"}`}>
-                  {project.status}
-                </span>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-medium tracking-tight font-heading">
-                    {project.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-clay">{project.tech}</p>
+          {projects.map((project, index) => (
+            <AnimateIn key={project.exhibit} delay={index * 0.1}>
+              <article className="group">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-xs font-medium uppercase tracking-widest text-clay">
+                    Exhibit {project.exhibit}
+                  </span>
+                  <span className={`text-xs px-2 py-0.5 border ${project.status === "In Progress" ? "border-foreground/30 text-foreground" : "border-frame text-clay"}`}>
+                    {project.status}
+                  </span>
                 </div>
-                <div className="text-sm leading-relaxed text-pretty">
-                  {project.description}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-medium tracking-tight font-heading">
+                      {project.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-clay">{project.tech}</p>
+                  </div>
+                  <div className="text-sm leading-relaxed text-pretty">
+                    {project.description}
+                  </div>
                 </div>
-              </div>
-              {project.images && project.images.length > 0 && (
-                <div className={`mt-8 grid gap-4 ${project.images.length > 1 ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1 max-w-md"}`}>
-                  {project.images.map((img, i) => (
-                    <div key={i} className="border border-frame overflow-hidden">
-                      <img
-                        src={img}
-                        alt={`${project.title} - image ${i + 1}`}
-                        className="w-full h-auto object-cover"
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
-            </article>
+                {project.images && project.images.length > 0 && (
+                  <div className={`mt-8 grid gap-4 ${project.images.length > 1 ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1 max-w-md"}`}>
+                    {project.images.map((img, i) => (
+                      <div key={i} className="border border-frame overflow-hidden">
+                        <img
+                          src={img}
+                          alt={`${project.title} - image ${i + 1}`}
+                          className="w-full h-auto object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </article>
+            </AnimateIn>
           ))}
         </div>
       </div>
