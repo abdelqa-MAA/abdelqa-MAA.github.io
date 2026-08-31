@@ -17,38 +17,46 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Desktop AI Assistant",
+    tech: "ESP32-S3, KiCad, OnShape",
+    description:
+      "Collaborating with a joint team to develop an AI-powered desktop lamp assistant with a movable arm, Wi-Fi connectivity, microphones, speakers, and a camera for direct user interaction. Designing and testing hardware interfaces for reliable sensor communication and data acquisition while strengthening skills in embedded systems and PCB design.",
+    status: "In Progress",
+    exhibit: "01",
+  },
+  {
     title: "Baja Instrument Cluster",
     tech: "STM32, PCB Design, Arduino",
     description:
       "Developing an instrument cluster for a Baja vehicle, integrating temperature, RPM, and speed sensors to display real-time vehicle data with reliable hardware interfaces.",
     status: "In Progress",
-    exhibit: "01",
+    exhibit: "02",
   },
   {
     title: "Effects Pedal",
-    tech: "STM32, PCB Design",
+    tech: "STM32, OnShape",
     description:
       "Collaborated with a team to design and build an analog/digital audio effects pedal for electric instruments. Learned Onshape and created the pedal's 3D enclosure and mechanical design, including component placement and physical layout. Designed and iterated enclosure features to accommodate the PCB, controls, switches, and external connectors. Assisted with hardware integration, testing, and troubleshooting to improve circuit performance and audio quality.",
     status: "Completed",
-    exhibit: "02",
+    exhibit: "03",
     images: [effectsPedalEnclosure.url, effectsPedalEnclosureOpen.url],
   },
   {
     title: "Mini-Piano Keyboard",
     tech: "Arduino IDE, Embedded Systems",
     description:
-      "Built a mini piano keyboard using a microcontroller, buttons, speaker, and touch slider for tone control. Applied Scrum methodology and iterative PCB development.",
+      "Collaborated with a team to build a mini piano keyboard using a microcontroller, buttons, speaker, and touch slider for tone control. Applied Scrum methodology to plan tasks and track progress, developing skills in embedded systems, firmware integration, and hardware debugging.",
     status: "Completed",
-    exhibit: "03",
+    exhibit: "04",
     images: [miniPiano, pianoSchematic],
   },
   {
     title: "Hamming Code Circuit",
     tech: "Multisim, Digital Logic, Breadboard",
     description:
-      "Designed a (7,4) Hamming code circuit using logic gate ICs, LEDs, and toggle switches implementing encoding and parity-check logic to detect and correct single-bit errors.",
+      "Designed and built a (7,4) Hamming code circuit on a breadboard with logic gate ICs, LEDs, and toggle switches. Implemented encoding and parity-check logic to detect and correct single-bit errors, testing with manual inputs and LED-based visualization.",
     status: "Completed",
-    exhibit: "04",
+    exhibit: "05",
     images: [hammingSchematic, hammingBreadboard],
   },
 ];
