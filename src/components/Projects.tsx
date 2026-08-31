@@ -17,20 +17,28 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Desktop AI Assistant",
+    tech: "ESP32-S3, KiCad, OnShape",
+    description:
+      "Collaborating with a joint team to develop an AI-powered desktop lamp assistant with a movable arm, Wi-Fi connectivity, microphones, speakers, and a camera for direct user interaction. Designing and testing hardware interfaces for reliable sensor communication and data acquisition while strengthening skills in embedded systems and PCB design.",
+    status: "In Progress",
+    exhibit: "01",
+  },
+  {
     title: "Baja Instrument Cluster",
     tech: "STM32, PCB Design, Arduino",
     description:
       "Developing an instrument cluster for a Baja vehicle, integrating temperature, RPM, and speed sensors to display real-time vehicle data with reliable hardware interfaces.",
     status: "In Progress",
-    exhibit: "01",
+    exhibit: "02",
   },
   {
     title: "Effects Pedal",
-    tech: "STM32, PCB Design",
+    tech: "STM32, OnShape",
     description:
       "Collaborated with a team to design and build an analog/digital audio effects pedal for electric instruments. Learned Onshape and created the pedal's 3D enclosure and mechanical design, including component placement and physical layout. Designed and iterated enclosure features to accommodate the PCB, controls, switches, and external connectors. Assisted with hardware integration, testing, and troubleshooting to improve circuit performance and audio quality.",
     status: "Completed",
-    exhibit: "02",
+    exhibit: "03",
     images: [effectsPedalEnclosure.url, effectsPedalEnclosureOpen.url],
   },
   {

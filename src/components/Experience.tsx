@@ -11,11 +11,11 @@ interface Role {
 const roles: Role[] = [
   {
     period: "Apr 2026 — Present",
-    title: "Sales Associate",
+    title: "Construction Associate & Lot Associate",
     company: "Home Depot",
     location: "Tigard, Oregon",
     description:
-      "Helping customers choose and cut lumber for projects. Collaborating with colleagues to achieve daily sales goals through effective communication and product knowledge.",
+      "Assisting customers with project needs and collaborating with colleagues to achieve daily sales goals through effective communication. Participating in training sessions to develop product and customer service knowledge.",
   },
   {
     period: "Sep 2025 — Present",
@@ -31,7 +31,7 @@ const education = {
   school: "Portland State University",
   degree: "Bachelor of Science, Electrical Engineering",
   expected: "Expected June 2028",
-  gpa: "3.08",
+  gpa: "3.1",
   courses: [
     "Exploring Electrical Engineering",
     "Engineering Computation",
@@ -41,22 +41,27 @@ const education = {
     "Introduction to Design Processes",
     "Electric Circuit Analysis I",
     "Electric Circuit Analysis II",
+    "Electric Circuit Analysis III",
     "Physics I",
     "Physics II",
+    "Physics III",
   ],
 };
 
 const skills = [
   "Python",
   "C",
+  "KiCad",
+  "Multisim",
+  "LTspice",
+  "OnShape",
   "STM32",
   "Arduino",
   "PCB Design",
-  "KiCad",
-  "Multisim",
-  "Microsoft Excel",
+  "PCB/Breadboard Troubleshooting",
   "Digital Logic",
   "Embedded Systems",
+  "Microsoft Excel",
 ];
 
 const Experience = () => {
