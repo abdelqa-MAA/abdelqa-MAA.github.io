@@ -1,6 +1,6 @@
 import AnimateIn from "./AnimateIn";
-import effectsPedal from "@/assets/effects-pedal.png";
-import effectsPedalPcb from "@/assets/effects-pedal-pcb.png";
+import effectsPedalEnclosure from "@/assets/effects-pedal-enclosure.png.asset.json";
+import effectsPedalEnclosureOpen from "@/assets/effects-pedal-enclosure-open.png.asset.json";
 import miniPiano from "@/assets/mini-piano.png";
 import pianoSchematic from "@/assets/piano-schematic.png";
 import hammingSchematic from "@/assets/hamming-schematic.png";
@@ -26,12 +26,12 @@ const projects: Project[] = [
   },
   {
     title: "Effects Pedal",
-    tech: "STM32, PCB Design, Op-Amps",
+    tech: "STM32, PCB Design",
     description:
-      "Designed and built an analog audio effects pedal for electric instruments with amplification and filtering stages, applying low-noise PCB techniques for signal integrity.",
+      "Collaborated with a team to design and build an analog/digital audio effects pedal for electric instruments. Learned Onshape and created the pedal's 3D enclosure and mechanical design, including component placement and physical layout. Designed and iterated enclosure features to accommodate the PCB, controls, switches, and external connectors. Assisted with hardware integration, testing, and troubleshooting to improve circuit performance and audio quality.",
     status: "Completed",
     exhibit: "02",
-    images: [effectsPedal, effectsPedalPcb],
+    images: [effectsPedalEnclosure.url, effectsPedalEnclosureOpen.url],
   },
   {
     title: "Mini-Piano Keyboard",
