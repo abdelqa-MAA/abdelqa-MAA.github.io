@@ -72,7 +72,7 @@ const Navbar = () => {
                       "Strategic Thinking", "Team Engagement", "Teamwork & Collaboration",
                       "Time Management", "Python & C", "Problem Solving", "Team Leadership",
                       "Partnership Building", "Multitasking", "Microsoft Excel",
-                      "PCB Troubleshooting", "KiCad"
+                      "PCB/Breadboard Troubleshooting", "KiCad", "MultiSim", "LTspice", "OnShape"
                     ].map((s) => (
                       <span key={s} className="text-xs px-2 py-1 border border-frame">{s}</span>
                     ))}
@@ -83,9 +83,9 @@ const Navbar = () => {
                 <div>
                   <h3 className="text-xs uppercase tracking-widest text-clay mb-3">Education</h3>
                   <p className="font-heading font-medium">Portland State University</p>
-                  <p className="text-clay text-xs mt-1">Bachelor of Science, Electrical Engineering · Expected June 2028 · GPA 3.08</p>
+                  <p className="text-clay text-xs mt-1">Bachelor of Science, Electrical Engineering · Expected June 2028 · GPA 3.1</p>
                   <p className="text-xs text-clay mt-2">
-                    Relevant Courses: Exploring Electrical Engineering, Engineering Computation, Engineering Programming, Digital Circuits, Digital Systems, Introduction to Design Processes, Electric Circuit Analysis I & II, Physics I & II
+                    Relevant Courses: Exploring Electrical Engineering, Engineering Computation, Engineering Programming, Digital Circuits, Digital Systems, Introduction to Design Processes, Electric Circuit Analysis I, II & III, Physics I, II & III
                   </p>
                 </div>
 
@@ -95,14 +95,14 @@ const Navbar = () => {
                   <div className="space-y-4">
                     <div>
                       <div className="flex justify-between items-start gap-4">
-                        <p className="font-heading font-medium">Sales Associate, Home Depot</p>
+                        <p className="font-heading font-medium">Construction Associate & Lot Associate, Home Depot</p>
                         <span className="text-xs text-clay whitespace-nowrap">Apr 2026 — Present</span>
                       </div>
                       <p className="text-xs text-clay">Tigard, Oregon</p>
                       <ul className="mt-2 space-y-1 text-xs list-disc list-inside text-clay">
-                        <li>Helped customers choose and cut various sizes of lumber for personal projects</li>
-                        <li>Participated in training sessions to develop knowledge of products and customer service techniques</li>
                         <li>Collaborated with colleagues to achieve daily sales goals through effective communication</li>
+                        <li>Assisted customers with project needs</li>
+                        <li>Participated in training sessions to develop knowledge of products and customer service techniques</li>
                       </ul>
                     </div>
                     <div>
@@ -126,12 +126,24 @@ const Navbar = () => {
                   <div className="space-y-4">
                     {[
                       {
+                        name: "DeskTop AI Assistant",
+                        tech: "ESP32-S3, KiCad, OnShape",
+                        status: "In Progress",
+                        bullets: [
+                          "Collaborating with a joint team to develop an AI-powered desktop lamp assistant",
+                          "Integrating a movable arm, Wi-Fi, microcontroller, microphones, speakers, and camera to interact directly with the user",
+                          "Designing and testing hardware interfaces for reliable sensor communication and data acquisition",
+                          "Strengthening skills in embedded systems, PCB design, and sensor interfacing",
+                        ],
+                      },
+                      {
                         name: "Hamming Code Circuit",
-                        tech: "Multisim",
+                        tech: "Multisim, Bread Boarding",
                         status: "Completed",
                         bullets: [
                           "Designed and built a (7,4) Hamming code circuit on a breadboard with logic gate ICs, LEDs, and toggle switches",
                           "Implemented encoding and parity-check logic to detect and correct single-bit errors",
+                          "Tested circuit functionality using manual inputs and LED-based visualization",
                           "Applied principles of digital logic design, Boolean algebra, and hardware troubleshooting",
                         ],
                       },
@@ -141,28 +153,20 @@ const Navbar = () => {
                         status: "Completed",
                         bullets: [
                           "Collaborated with a team to design and build a mini piano keyboard using a microcontroller, buttons, speaker, and touch slider",
-                          "Applied Scrum methodology to plan tasks and track progress",
+                          "Applied Scrum methodology to plan tasks, track progress, and improve team coordination",
+                          "Developed skills in embedded systems, basic firmware integration, and hardware debugging",
                           "Gained experience in PCB design and system-level integration through iterative development",
                         ],
                       },
                       {
                         name: "Effects Pedal",
-                        tech: "STM32, PCB Design",
+                        tech: "STM32, OnShape",
                         status: "Completed",
                         bullets: [
-                          "Collaborated with team to design and build an analog audio effects pedal for electric instruments",
-                          "Designed schematics and selected components for amplification and filtering stages",
-                          "Applied low-noise PCB design techniques to maintain signal integrity",
-                        ],
-                      },
-                      {
-                        name: "Baja Instrument Cluster",
-                        tech: "STM32, PCB Design",
-                        status: "In Progress",
-                        bullets: [
-                          "Developing an instrument cluster for a Baja vehicle using an Arduino microcontroller",
-                          "Integrating temperature, RPM, and speed sensors for real-time vehicle data",
-                          "Designing and testing hardware interfaces for reliable sensor communication",
+                          "Collaborated with a team to design and build an analog/digital audio effects pedal for electric instruments",
+                          "Learned Onshape and created the pedal's 3D enclosure and mechanical design, including component placement and physical layout",
+                          "Designed and iterated enclosure features to accommodate the PCB, controls, switches, and external connectors",
+                          "Assisted with hardware integration, testing, and troubleshooting to improve circuit performance and audio quality",
                         ],
                       },
                     ].map((p) => (
