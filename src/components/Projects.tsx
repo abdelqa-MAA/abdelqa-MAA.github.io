@@ -45,18 +45,18 @@ const projects: Project[] = [
     title: "Mini-Piano Keyboard",
     tech: "Arduino IDE, Embedded Systems",
     description:
-      "Built a mini piano keyboard using a microcontroller, buttons, speaker, and touch slider for tone control. Applied Scrum methodology and iterative PCB development.",
+      "Collaborated with a team to build a mini piano keyboard using a microcontroller, buttons, speaker, and touch slider for tone control. Applied Scrum methodology to plan tasks and track progress, developing skills in embedded systems, firmware integration, and hardware debugging.",
     status: "Completed",
-    exhibit: "03",
+    exhibit: "04",
     images: [miniPiano, pianoSchematic],
   },
   {
     title: "Hamming Code Circuit",
     tech: "Multisim, Digital Logic, Breadboard",
     description:
-      "Designed a (7,4) Hamming code circuit using logic gate ICs, LEDs, and toggle switches implementing encoding and parity-check logic to detect and correct single-bit errors.",
+      "Designed and built a (7,4) Hamming code circuit on a breadboard with logic gate ICs, LEDs, and toggle switches. Implemented encoding and parity-check logic to detect and correct single-bit errors, testing with manual inputs and LED-based visualization.",
     status: "Completed",
-    exhibit: "04",
+    exhibit: "05",
     images: [hammingSchematic, hammingBreadboard],
   },
 ];
