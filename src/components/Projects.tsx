@@ -25,20 +25,12 @@ const projects: Project[] = [
     exhibit: "01",
   },
   {
-    title: "Baja Instrument Cluster",
-    tech: "STM32, PCB Design, Arduino",
-    description:
-      "Developing an instrument cluster for a Baja vehicle, integrating temperature, RPM, and speed sensors to display real-time vehicle data with reliable hardware interfaces.",
-    status: "In Progress",
-    exhibit: "02",
-  },
-  {
     title: "Effects Pedal",
     tech: "STM32, OnShape",
     description:
       "Collaborated with a team to design and build an analog/digital audio effects pedal for electric instruments. Learned Onshape and created the pedal's 3D enclosure and mechanical design, including component placement and physical layout. Designed and iterated enclosure features to accommodate the PCB, controls, switches, and external connectors. Assisted with hardware integration, testing, and troubleshooting to improve circuit performance and audio quality.",
     status: "Completed",
-    exhibit: "03",
+    exhibit: "02",
     images: [effectsPedalEnclosure.url, effectsPedalEnclosureOpen.url],
   },
   {
@@ -47,7 +39,7 @@ const projects: Project[] = [
     description:
       "Collaborated with a team to build a mini piano keyboard using a microcontroller, buttons, speaker, and touch slider for tone control. Applied Scrum methodology to plan tasks and track progress, developing skills in embedded systems, firmware integration, and hardware debugging.",
     status: "Completed",
-    exhibit: "04",
+    exhibit: "03",
     images: [miniPiano, pianoSchematic],
   },
   {
@@ -56,7 +48,7 @@ const projects: Project[] = [
     description:
       "Designed and built a (7,4) Hamming code circuit on a breadboard with logic gate ICs, LEDs, and toggle switches. Implemented encoding and parity-check logic to detect and correct single-bit errors, testing with manual inputs and LED-based visualization.",
     status: "Completed",
-    exhibit: "05",
+    exhibit: "04",
     images: [hammingSchematic, hammingBreadboard],
   },
 ];
