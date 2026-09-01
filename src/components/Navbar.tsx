@@ -72,7 +72,7 @@ const Navbar = () => {
                       "Strategic Thinking", "Team Engagement", "Teamwork & Collaboration",
                       "Time Management", "Python & C", "Problem Solving", "Team Leadership",
                       "Partnership Building", "Multitasking", "Microsoft Excel",
-                      "PCB/Breadboard Troubleshooting", "KiCad", "MultiSim", "LTspice", "OnShape"
+                      "PCB/Breadboard Troubleshooting", "KiCad", "MultiSim", "LTspice", "Onshape"
                     ].map((s) => (
                       <span key={s} className="text-xs px-2 py-1 border border-frame">{s}</span>
                     ))}
@@ -127,7 +127,7 @@ const Navbar = () => {
                     {[
                       {
                         name: "DeskTop AI Assistant",
-                        tech: "ESP32-S3, KiCad, OnShape",
+                        tech: "ESP32-S3, KiCad, Onshape",
                         status: "In Progress",
                         bullets: [
                           "Collaborating with a joint team to develop an AI-powered desktop lamp assistant",
@@ -160,7 +160,7 @@ const Navbar = () => {
                       },
                       {
                         name: "Effects Pedal",
-                        tech: "STM32, OnShape",
+                        tech: "STM32, Onshape",
                         status: "Completed",
                         bullets: [
                           "Collaborated with a team to design and build an analog/digital audio effects pedal for electric instruments",
