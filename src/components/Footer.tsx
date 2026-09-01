@@ -38,14 +38,6 @@ const Footer = () => {
           GitHub ↗
         </a>
       </div>
-      <div className="text-right">
-        <a
-          href="mailto:abdullahga2006@gmail.com"
-          className="text-2xl md:text-3xl tracking-tight hover:italic transition-all duration-300 font-heading"
-        >
-          Get in Touch
-        </a>
-      </div>
     </footer>
   );
 };
