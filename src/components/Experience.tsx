@@ -33,18 +33,13 @@ const education = {
   expected: "Expected June 2028",
   gpa: "3.1",
   courses: [
-    "Exploring Electrical Engineering",
-    "Engineering Computation",
-    "Engineering Programming",
-    "Digital Circuits",
+    "Electric Circuit Analysis I–III",
     "Digital Systems",
+    "Digital Circuits",
+    "Engineering Programming",
+    "Engineering Computation",
     "Introduction to Design Processes",
-    "Electric Circuit Analysis I",
-    "Electric Circuit Analysis II",
-    "Electric Circuit Analysis III",
-    "Physics I",
-    "Physics II",
-    "Physics III",
+    "Physics I–III",
   ],
 };
 
