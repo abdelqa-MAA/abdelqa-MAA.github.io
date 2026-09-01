@@ -18,17 +18,17 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Desktop AI Assistant",
-    tech: "ESP32-S3, KiCad, OnShape",
+    tech: "ESP32-S3, KiCad, Onshape",
     description:
-      "Collaborating with a joint team to develop an AI-powered desktop lamp assistant with a movable arm, Wi-Fi connectivity, microphones, speakers, and a camera for direct user interaction. Designing and testing hardware interfaces for reliable sensor communication and data acquisition while strengthening skills in embedded systems and PCB design.",
+      "Embedded hardware platform for an autonomous desktop robot. Designing the electrical architecture for a multi-microphone audio system, camera interface, motor control, and supporting PCB hardware using ESP32-S3, KiCad, and Onshape. Building and testing hardware interfaces for reliable sensor communication and data acquisition across the movable arm and Wi-Fi connected control stack.",
     status: "In Progress",
     exhibit: "01",
   },
   {
     title: "Effects Pedal",
-    tech: "STM32, OnShape",
+    tech: "STM32, Onshape",
     description:
-      "Collaborated with a team to design and build an analog/digital audio effects pedal for electric instruments. Learned Onshape and created the pedal's 3D enclosure and mechanical design, including component placement and physical layout. Designed and iterated enclosure features to accommodate the PCB, controls, switches, and external connectors. Assisted with hardware integration, testing, and troubleshooting to improve circuit performance and audio quality.",
+      "Analog/digital audio effects pedal for electric instruments, built with a team. Designed the pedal's mechanical enclosure in Onshape, including PCB mounting, controls, switches, audio connectors, and internal component clearances. Iterated the enclosure through 3D-printed prototypes and assisted with PCB integration, hardware testing, and troubleshooting to improve circuit performance and audio quality.",
     status: "Completed",
     exhibit: "02",
     images: [effectsPedalEnclosure.url, effectsPedalEnclosureOpen.url],

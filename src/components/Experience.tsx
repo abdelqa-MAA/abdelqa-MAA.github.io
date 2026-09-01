@@ -33,18 +33,13 @@ const education = {
   expected: "Expected June 2028",
   gpa: "3.1",
   courses: [
-    "Exploring Electrical Engineering",
-    "Engineering Computation",
-    "Engineering Programming",
-    "Digital Circuits",
+    "Electric Circuit Analysis I–III",
     "Digital Systems",
+    "Digital Circuits",
+    "Engineering Programming",
+    "Engineering Computation",
     "Introduction to Design Processes",
-    "Electric Circuit Analysis I",
-    "Electric Circuit Analysis II",
-    "Electric Circuit Analysis III",
-    "Physics I",
-    "Physics II",
-    "Physics III",
+    "Physics I–III",
   ],
 };
 
@@ -54,7 +49,7 @@ const skills = [
   "KiCad",
   "Multisim",
   "LTspice",
-  "OnShape",
+  "Onshape",
   "STM32",
   "Arduino",
   "PCB Design",
@@ -70,7 +65,7 @@ const Experience = () => {
       <div className="grid grid-cols-1 md:grid-cols-12">
         <div className="md:col-span-4 p-8 border-b md:border-b-0 md:border-r border-frame">
           <h2 className="text-sm uppercase tracking-widest text-clay sticky top-8">
-            Professional Archive
+            Experience &amp; Education
           </h2>
         </div>
         <div className="md:col-span-8 p-8 py-16 md:py-24 flex flex-col gap-16">
