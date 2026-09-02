@@ -1,12 +1,12 @@
 import AnimateIn from "./AnimateIn";
-import effectsPedalEnclosure from "@/assets/effects-pedal-enclosure.png.asset.json";
-import effectsPedalEnclosureOpen from "@/assets/effects-pedal-enclosure-open.png.asset.json";
+import effectsPedalEnclosure from "@/assets/effects-pedal-enclosure.png";
+import effectsPedalEnclosureOpen from "@/assets/effects-pedal-enclosure-open.png";
 import miniPiano from "@/assets/mini-piano.png";
 import pianoSchematic from "@/assets/piano-schematic.png";
 import hammingSchematic from "@/assets/hamming-schematic.png";
 import hammingBreadboard from "@/assets/hamming-breadboard.png";
-import aiMicCircuit from "@/assets/crk1.png.asset.json";
-import aiMicCircuitHand from "@/assets/crk2.png.asset.json";
+import aiMicCircuit from "@/assets/crk1.png";
+import aiMicCircuitHand from "@/assets/crk2.png";
 
 interface Project {
   title: string;
@@ -25,7 +25,7 @@ const projects: Project[] = [
       "Embedded hardware platform for an autonomous desktop robot. Designing the electrical architecture for a multi-microphone audio system, camera interface, motor control, and supporting PCB hardware using ESP32-S3, KiCad, and Onshape. Building and testing hardware interfaces for reliable sensor communication and data acquisition across the movable arm and Wi-Fi connected control stack.",
     status: "In Progress",
     exhibit: "01",
-    images: [aiMicCircuit.url, aiMicCircuitHand.url],
+    images: [aiMicCircuit, aiMicCircuitHand],
   },
   {
     title: "Effects Pedal",
@@ -34,7 +34,7 @@ const projects: Project[] = [
       "Analog/digital audio effects pedal for electric instruments, built with a team. Designed the pedal's mechanical enclosure in Onshape, including PCB mounting, controls, switches, audio connectors, and internal component clearances. Iterated the enclosure through 3D-printed prototypes and assisted with PCB integration, hardware testing, and troubleshooting to improve circuit performance and audio quality.",
     status: "Completed",
     exhibit: "02",
-    images: [effectsPedalEnclosure.url, effectsPedalEnclosureOpen.url],
+    images: [effectsPedalEnclosure, effectsPedalEnclosureOpen],
   },
   {
     title: "Mini-Piano Keyboard",
