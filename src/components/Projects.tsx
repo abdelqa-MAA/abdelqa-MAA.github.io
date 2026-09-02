@@ -5,6 +5,8 @@ import miniPiano from "@/assets/mini-piano.png";
 import pianoSchematic from "@/assets/piano-schematic.png";
 import hammingSchematic from "@/assets/hamming-schematic.png";
 import hammingBreadboard from "@/assets/hamming-breadboard.png";
+import aiMicCircuit from "@/assets/crk1.png.asset.json";
+import aiMicCircuitHand from "@/assets/crk2.png.asset.json";
 
 interface Project {
   title: string;
