@@ -23,7 +23,7 @@ const roles: Role[] = [
     company: "Viking Motor Sports",
     location: "Portland, Oregon",
     description:
-      "Designing a speedometer for the Baja off-road vehicle to improve driver safety and efficiency. Contributing to team meetings and assisting with special events and programs.",
+      "Participating in Viking Motorsports' Baja SAE team through engineering team meetings, design discussions, and project planning. Collaborating with team members to understand vehicle systems, design requirements, and the engineering development process.",
   },
 ];
 
@@ -54,6 +54,7 @@ const skills = [
   "Arduino",
   "PCB Design",
   "PCB/Breadboard Troubleshooting",
+  "Revit",
   "Digital Logic",
   "Embedded Systems",
   "Microsoft Excel",
