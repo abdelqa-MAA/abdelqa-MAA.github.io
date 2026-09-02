@@ -1,12 +1,12 @@
 import AnimateIn from "./AnimateIn";
-import effectsPedalEnclosure from "@/assets/effects-pedal-enclosure.png.asset.json";
-import effectsPedalEnclosureOpen from "@/assets/effects-pedal-enclosure-open.png.asset.json";
+import effectsPedalEnclosure from "@/assets/effects-pedal-enclosure.png";
+import effectsPedalEnclosureOpen from "@/assets/effects-pedal-enclosure-open.png";
 import miniPiano from "@/assets/mini-piano.png";
 import pianoSchematic from "@/assets/piano-schematic.png";
 import hammingSchematic from "@/assets/hamming-schematic.png";
 import hammingBreadboard from "@/assets/hamming-breadboard.png";
-import aiMicCircuit from "@/assets/crk1.png.asset.json";
-import aiMicCircuitHand from "@/assets/crk2.png.asset.json";
+import aiMicCircuit from "@/assets/crk1.png";
+import aiMicCircuitHand from "@/assets/crk2.png";
 
 interface Project {
   title: string;
