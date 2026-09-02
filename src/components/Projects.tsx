@@ -25,6 +25,7 @@ const projects: Project[] = [
       "Embedded hardware platform for an autonomous desktop robot. Designing the electrical architecture for a multi-microphone audio system, camera interface, motor control, and supporting PCB hardware using ESP32-S3, KiCad, and Onshape. Building and testing hardware interfaces for reliable sensor communication and data acquisition across the movable arm and Wi-Fi connected control stack.",
     status: "In Progress",
     exhibit: "01",
+    images: [aiMicCircuit.url, aiMicCircuitHand.url],
   },
   {
     title: "Effects Pedal",
