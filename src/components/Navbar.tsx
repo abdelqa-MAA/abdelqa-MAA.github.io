@@ -72,7 +72,7 @@ const Navbar = () => {
                       "Strategic Thinking", "Team Engagement", "Teamwork & Collaboration",
                       "Time Management", "Python & C", "Problem Solving", "Team Leadership",
                       "Partnership Building", "Multitasking", "Microsoft Excel",
-                      "PCB/Breadboard Troubleshooting", "KiCad", "MultiSim", "LTspice", "Onshape"
+                      "PCB/Breadboard Troubleshooting", "KiCad", "MultiSim", "LTspice", "Onshape", "Revit"
                     ].map((s) => (
                       <span key={s} className="text-xs px-2 py-1 border border-frame">{s}</span>
                     ))}
@@ -112,9 +112,8 @@ const Navbar = () => {
                       </div>
                       <p className="text-xs text-clay">Portland, Oregon</p>
                       <ul className="mt-2 space-y-1 text-xs list-disc list-inside text-clay">
-                        <li>Designing speedometer for the Baja off-road vehicle improving driver safety and efficiency</li>
-                        <li>Contributed to team meetings discussing the building of the car</li>
-                        <li>Assisted with special events and programs</li>
+                        <li>Participating in the Baja SAE team through engineering team meetings, design discussions, and project planning</li>
+                        <li>Collaborating with team members to understand vehicle systems, design requirements, and the engineering development process</li>
                       </ul>
                     </div>
                   </div>
