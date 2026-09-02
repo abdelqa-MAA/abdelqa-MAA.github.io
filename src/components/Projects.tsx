@@ -5,6 +5,8 @@ import miniPiano from "@/assets/mini-piano.png";
 import pianoSchematic from "@/assets/piano-schematic.png";
 import hammingSchematic from "@/assets/hamming-schematic.png";
 import hammingBreadboard from "@/assets/hamming-breadboard.png";
+import aiMicCircuit from "@/assets/crk1.png.asset.json";
+import aiMicCircuitHand from "@/assets/crk2.png.asset.json";
 
 interface Project {
   title: string;
@@ -23,6 +25,7 @@ const projects: Project[] = [
       "Embedded hardware platform for an autonomous desktop robot. Designing the electrical architecture for a multi-microphone audio system, camera interface, motor control, and supporting PCB hardware using ESP32-S3, KiCad, and Onshape. Building and testing hardware interfaces for reliable sensor communication and data acquisition across the movable arm and Wi-Fi connected control stack.",
     status: "In Progress",
     exhibit: "01",
+    images: [aiMicCircuit.url, aiMicCircuitHand.url],
   },
   {
     title: "Effects Pedal",
